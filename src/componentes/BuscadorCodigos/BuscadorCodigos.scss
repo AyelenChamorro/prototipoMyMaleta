@@ -1,0 +1,30 @@
+body {
+  .bg-comprar-productos {
+    background-color: #398269;
+    height: 280px;
+
+    .ingresa-codigo {
+      color: white;
+      font-family: Courgette;
+    }
+    .input-codigos {
+      width: 800px;
+      border-radius: 10px;
+      height: 40px;
+      background-color: #00565f;
+      margin-top: 50px;
+    }
+    .boton-buscar {
+      margin-top: 50px;
+    }
+  }
+  input[type="text"] {
+    color: white;
+    padding-left: 20px;
+  }
+  ::placeholder {
+    color: white;
+    padding-left: 20px;
+  }
+}
+

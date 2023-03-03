@@ -1,0 +1,36 @@
+body{
+    button {
+        &.success {
+        background-color: #398269;
+        width: 300px;
+        height: 50px;
+        border: 2px solid white;
+        font-family: Courgette;
+        color: white;
+        }
+        &.buscar{
+            background-color: #98ff96;
+            width: 200px;
+            height: 50px;
+            color: black;
+            border-radius: 10px;
+            border: 2px solid black;
+            
+        }
+        &.siguiente{
+            background-color: #98ff96;
+            width: 400px;
+            height: 40px;
+            color: black;
+        }
+        &.volver{
+            background-color: #FA9C86;
+            width: 200px;
+            height: 30px;
+        }
+    }
+   
+         
+    
+    
+}

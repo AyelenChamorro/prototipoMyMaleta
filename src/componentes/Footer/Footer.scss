@@ -1,0 +1,52 @@
+body {
+  .bg-footer {
+    background-color: #00565f;
+    height: 350px;
+    color: white;
+    .logo-mi-maleta {
+        margin-left: 88px;
+        margin-top: 30px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .mi-maleta-home {
+      text-decoration: none;
+      color: white;
+      font-family: Dancing Script;
+    }
+    .footer-items {
+      font-family: Courgette;
+      h2 {
+        margin-top: 60px;
+      }
+    }
+    .boton-idioma {
+      .btn-primary {
+        margin-top: 130px;
+        width: 300px;
+        height: 50px;
+        font-family: Courgette;
+        --bs-btn-bg: #00565f;
+        --bs-btn-hover-bg: #398269;
+        --bs-btn-border-color: #f3f3f3;
+        --bs-btn-hover-border-color: #f3f3f3;
+        --bs-btn-active-bg: #398269;
+        --bs-btn-active-border-color: #f3f3f3;
+        --bs-btn-disabled-bg: #398269;
+        --bs-btn-disabled-border-color: #f3f3f3;
+      }
+      .dropdown-menu {
+        --bs-dropdown-bg: #00565f;
+        --bs-dropdown-border-color: #f3f3f3;
+      }
+      .dropdown-item {
+        width: 300px;
+        color: #f3f3f3;
+
+        --bs-dropdown-link-active-bg: #398269;
+        --bs-dropdown-link-hover-bg: #398269;
+      }
+    }
+  }
+}

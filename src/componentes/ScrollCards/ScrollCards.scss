@@ -1,0 +1,50 @@
+body {
+  .body-cards {
+    background-color: #398269;
+    height: 450px;
+    .container-cards {
+      width: 250px;
+      height: 300px;
+
+      .bg-imagen {
+        background-color: #c4c4c4;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .container-imagen {
+          width: 150px;
+          height: 150px;
+          .img-top {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .container-banderas {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 150px;
+        .img-banderas {
+          margin-top: 40px;
+          width: 50px;
+          height: 50px;
+        }
+        .icono-mensaje {
+          margin-top: 40px;
+          width: 50px;
+          height: 40px;
+        }
+        .ganado{
+            text-align: center;
+            font-family: Courier-Prime;
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: #FA9C86;
+            border-radius: 15px;
+          color: black;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

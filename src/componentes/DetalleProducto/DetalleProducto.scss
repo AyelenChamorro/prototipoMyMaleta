@@ -1,0 +1,110 @@
+body {
+  .bg-detalle {
+    background-color: #398269;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    .container-detalles-p {
+      width: 650px;
+      height: 924px;
+      background-color: #00565f;
+      font-family: Courgette;
+      color: white;
+      .imagen-producto {
+        .bg-imagen-producto {
+          background-color: #398269;
+          border-radius: 10px;
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+          }
+        }
+      }
+      .detalle-caja {
+        font-size: 10px;
+      }
+      li {
+        --bs-list-group-color: white;
+        --bs-list-group-bg: #398269;
+      }
+      .input-grup {
+        background-color: #398269;
+        color: white;
+
+        .dropdown-menu {
+          --bs-dropdown-bg: #398269;
+        }
+        .form-control {
+          background-color: #398269;
+          color: white;
+        }
+        .btn-outline-secondary {
+          --bs-btn-color: black;
+        }
+      }
+      .label-detalle {
+        .form-control {
+          background-color: #398269;
+          color: white;
+        }
+      }
+    }
+    .container-detalles-case2 {
+      width: 650px;
+      height: 550px;
+      background-color: #00565f;
+      font-family: Courgette;
+      color: white;
+      li {
+        --bs-list-group-color: white;
+        --bs-list-group-bg: #398269;
+      }
+      input {
+        background-color: #398269;
+        color: white;
+
+        
+        
+      }
+      ::placeholder {
+          color: white;
+         
+      }
+    }
+    .container-detalles-case3{
+      width: 550px;
+      height: 650px;
+      background-color: #00565f;
+      font-family: Courgette;
+      color: white;
+      .imagen-producto{
+        width: 100px;
+        height: 100px;
+      }
+      .border-bot{
+        width: 480px;
+        border-bottom: 1px solid white;
+       
+        
+      }
+      .cantidades{
+        width: 370px;
+      }
+    }
+    .bg-precios{
+      width: 550px;
+      height: 400px;
+      background-color: #00565f;
+      font-family: Courgette;
+      color: white;
+      .bg-border-bot{
+      width: 500px;
+        border-bottom: 1px solid white;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

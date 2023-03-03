@@ -1,0 +1,18 @@
+body{
+    .body-cards-compra{
+        flex-wrap: wrap;
+        background-color: #398269;
+        .container-card-compra{
+       
+            width: 360px;
+            .bg-imagen{
+                background-color: #c4c4c4;
+                height: 270px;
+            }
+        }
+        .bg-white{
+            height: 200px;
+        }
+    }
+   
+}
