@@ -2,6 +2,7 @@ import { useState } from "react";
 import CustomButton from "../BotonPersonalizado/BotonPersonalizado";
 
 import "./BuscadorCodigos.scss";
+import { Link } from "react-router-dom";
 
 export const BuscadorCodigos = ({ item }) => {
   const [codigo, setCodigo] = useState("");
@@ -10,22 +11,22 @@ export const BuscadorCodigos = ({ item }) => {
   const handleChange = (e) => {
     setCodigo(e.target.value);
   };
-  console.log(item);
+ 
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // console.log("Buscando");
+    
     const id = item?.find(
       (selectedId) => parseInt(selectedId?.codigo) === parseInt(codigo)
     );
     if (id) {
       setItemEncontrdo({ id });
     } else {
-      // console.log("no existe");
+   
       setItemEncontrdo("No existe el producto");
     }
   };
-  
+
   return (
     <>
       <div className="bg-comprar-productos">
@@ -41,14 +42,14 @@ export const BuscadorCodigos = ({ item }) => {
               onChange={handleChange}
               placeholder="Ingrese el Codigo del producto"
             />
-            <div className="mt-5">
+            <div className="mt-4">
               <CustomButton type="buscar">Buscar</CustomButton>
             </div>
           </form>
         </div>
       </div>
       {itemEncontrado === "No existe el producto" ? (
-        <div>
+        <div className="text-center">
           <h1>No existe el producto</h1>
         </div>
       ) : (
@@ -56,11 +57,15 @@ export const BuscadorCodigos = ({ item }) => {
           <div className="container-card-compra mt-5">
             <div className="bg-imagen d-flex justify-content-center align-items-center">
               <div className="container-imagen ">
+                <Link to={`/HacerPedido/${itemEncontrado.id.codigo}`} >
                 <img
                   className="img-top"
                   src={itemEncontrado.id.imagenItem}
                   alt="reloj"
                 />
+                
+                </Link>
+               
               </div>
             </div>
             <div className="bg-white ">

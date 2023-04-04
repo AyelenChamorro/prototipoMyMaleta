@@ -1,5 +1,7 @@
 body {
   .mimaleta {
+    margin: 0;
+    
     font-family: Courgette;
     color: white;
     background-color: #398269;
@@ -9,6 +11,87 @@ body {
       .icono-flecha{
         margin-top: 52px;
         
+      }
+    }
+  }
+  //TABLET
+  @media (min-width: 768px) and (max-width: 991px) {
+    .mimaleta {
+      margin: 0;
+      
+      font-family: Courgette;
+      color: white;
+      background-color: #398269;
+      .descripcion-mi-maleta {
+         h2{
+          font-size: 18px;
+         }
+         p{
+          font-size: 13px;
+         }
+        margin-top: 100px;
+        .icono-flecha{
+          margin-top: 49px;
+          
+        }
+      }
+      img{
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  //MOBILE
+  @media (min-width: 575px) and (max-width: 768px) {
+    .mimaleta {
+     
+      
+      font-family: Courgette;
+      color: white;
+      background-color: #398269;
+      .descripcion-mi-maleta {
+         h2{
+          font-size: 18px;
+         }
+         p{
+          font-size: 13px;
+         }
+        margin-top: 100px;
+        .icono-flecha{
+          margin-top: 49px;
+          
+        }
+      }
+      img{
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+   
+  }
+
+  @media (min-width: 100px) and (max-width: 575px)    {
+    .mimaleta {
+      font-family: Courgette;
+      color: white;
+      background-color: #398269;
+      .descripcion-mi-maleta {
+         h2{
+          font-size: 13px;
+         }
+         p{
+          font-size: 11px;
+         }
+        margin-top: 100px;
+        .icono-flecha{
+          margin-top: 49px;
+        }
+      }
+      img{
+        margin-top: 80px;
+        width: 200px;
+        height: 200px;
       }
     }
   }

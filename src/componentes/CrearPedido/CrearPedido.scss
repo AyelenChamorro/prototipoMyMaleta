@@ -1,5 +1,6 @@
 body {
   .bg-cards-pedido {
+   
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -7,25 +8,124 @@ body {
     background-color: #398269;
     .card-pedido {
       width: 950px;
-      height: 326px;
+      height: 331px;
       border: 2px solid white;
       color: white;
-      
-       
-        .numero-titulo{
-            width: 450px;
-            margin-top: 50px;
-            font-family: Courgette;
-      
-      
+
+      .numero-titulo {
+        width: 450px;
+        margin-top: 50px;
+        font-family: Courgette;
       }
-      .text-descripcion{
-        
+      .text-descripcion {
         margin: 20px 80px;
         font-family: Courier Prime;
         text-align: center;
       }
+    }
+  }
+
+  //TABLET
+  @media (min-width: 768px) and (max-width: 991px) {
+    .bg-cards-pedido {
+      .card-pedido {
+        width: 700px;
+        height: 205px;
+        .numero-titulo {
+          margin-top: 20px;
+          h3 {
+            font-size: 18px;
+          }
+          h4 {
+            font-size: 18px;
+          }
+        }
+        .text-descripcion {
+          p {
+            margin-top: -15px;
+            font-size: 13px;
+            margin-left: 23px;
+          }
+        }
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  //MOBILE
+  @media (min-width: 575px) and (max-width: 768px) {
+    .bg-cards-pedido {
+      .card-pedido {
+        width: 500px;
+        height: 195px;
+        .numero-titulo {
+       
+          margin-top: 20px;
+          .titulo-card-pedido{
+            text-align: center !important;
+            h4 {
+        
+              font-size: 13px;
+             
+            }
+          }
+          h3 {
+            font-size: 15px;
+            margin-left: 34px !important;
+          }
+         
+        }
+        .text-descripcion {
+         
+          p {
+            font-size: 13px;
+            display: flex;
+            text-align: center;
+          }
+        }
+        img {
+       display: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 575px)    {
+    .bg-cards-pedido {
+      .card-pedido {
+        width: 300px;
+        height: 205px;
+        .numero-titulo {
+          margin-top: 20px;
+          width: 250px;
+          .titulo-card-pedido{
+            
+            h4 {
+              font-size: 11px;
+              margin-left: -23px;
+            }
+          }
+          h3 {
+            font-size: 15px;
+            margin-left: 10px !important;
+          }
+        }
+        .text-descripcion {
       
+          text-align: center;
+          p {
+            font-size: 11px;
+            margin-left: -71px;
+            width: 240px;
+          }
+        }
+        img {
+       display: none;
+        }
+      }
     }
   }
 }

@@ -6,8 +6,7 @@ body {
 
     align-items: center;
     .container-detalles-p {
-      width: 650px;
-      height: 924px;
+  
       background-color: #00565f;
       font-family: Courgette;
       color: white;
@@ -52,8 +51,7 @@ body {
       }
     }
     .container-detalles-case2 {
-      width: 650px;
-      height: 550px;
+   
       background-color: #00565f;
       font-family: Courgette;
       color: white;
@@ -75,7 +73,7 @@ body {
     }
     .container-detalles-case3{
       width: 550px;
-      height: 650px;
+      
       background-color: #00565f;
       font-family: Courgette;
       color: white;
@@ -107,4 +105,210 @@ body {
       }
     }
   }
+   //TABLET
+   @media (min-width: 768px) and (max-width: 991px) {
+    .container-detalles-p {
+     width: 500px;
+ 
+      .imagen-producto {
+        .bg-imagen-producto {
+          background-color: #398269;
+          border-radius: 10px;
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+          }
+        }
+      }
+      .detalle-caja {
+        font-size: 10px;
+      }
+      
+    }
+    .container-detalles-case2{
+      width: 500px;
+      
+      background-color: #00565f;
+      font-family: Courgette;
+      color: white;
+      h3{
+        font-size: 18px;
+      }
+      h4{
+        font-size: 18px;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+    .container-detalles-case3{
+      width: 550px;
+     
+  
+      .imagen-producto{
+        width: 100px;
+        height: 100px;
+      }
+      .border-bot{
+        width: 480px;
+        border-bottom: 1px solid white;
+       
+        
+      }
+      .cantidades{
+        width: 370px;
+      }
+    }
+    
+   }
+    //MOBILE
+    @media (min-width: 575px) and (max-width: 768px) {
+      .container-detalles-p {
+        width: 450px;
+
+        .imagen-producto {
+          .bg-imagen-producto {
+            background-color: #398269;
+            border-radius: 10px;
+            img {
+              width: 100px;
+              height: 100px;
+              border-radius: 10px;
+            }
+          }
+        }
+        .detalle-caja {
+          font-size: 10px;
+        }
+        
+      }
+      .container-detalles-case2{
+        width: 450px;
+      
+        background-color: #00565f;
+        h3{
+          font-size: 18px;
+        }
+        h4{
+          font-size: 18px;
+        }
+        p{
+          font-size: 15px;
+        }
+       
+      }
+      .container-detalles-case3{
+        width: 400px !important;
+       
+  
+        .imagen-producto{
+          width: 100px;
+          height: 100px;
+        }
+        .border-bot{
+          width: 375px !important;
+          border-bottom: 1px solid white;
+         
+        
+        }
+        .cantidades{
+          width: 290px !important;
+        }
+        p{
+          font-size: 13px;
+        }
+        h3{
+          font-size: 15px;
+        }
+      }
+      .bg-precios{
+        width: 400px !important;
+        height: 400px;
+        background-color: #00565f;
+        font-family: Courgette;
+        color: white;
+        .bg-border-bot{
+        width: 353px !important;
+          border-bottom: 1px solid white;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    @media (min-width: 100px) and (max-width: 575px) {
+      .container-detalles-p {
+        width: 300px;
+   
+        .imagen-producto {
+          .bg-imagen-producto {
+            background-color: #398269;
+            border-radius: 10px;
+            img {
+              width: 100px;
+              height: 100px;
+              border-radius: 10px;
+            }
+          }
+        }
+        .detalle-caja {
+          font-size: 10px;
+        }
+        
+      }
+      .container-detalles-case2{
+        width: 300px;
+      
+        background-color: #00565f;
+        h3{
+          font-size: 13px;
+        }
+        h4{
+          font-size: 13px;
+        }
+        p{
+          font-size: 11px;
+        }
+      }
+      .container-detalles-case3{
+        width: 300px !important;
+       
+  
+        .imagen-producto{
+          width: 100px;
+          height: 100px;
+        }
+        .border-bot{
+          width: 250px !important;
+          border-bottom: 1px solid white;
+         
+        
+        }
+        .cantidades{
+          width: 200px !important;
+        }
+        p{
+          font-size: 11px;
+        }
+        h3{
+          font-size: 13px;
+        }
+      }
+      .bg-precios{
+        width: 300px !important;
+        height: 400px;
+   
+        color: white;
+        .bg-border-bot{
+        width: 260px !important;
+          border-bottom: 1px solid white;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+        p{
+          font-size: 11px;
+        }
+      }
+    }
 }

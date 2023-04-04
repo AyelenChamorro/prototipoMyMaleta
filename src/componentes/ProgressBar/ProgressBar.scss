@@ -83,4 +83,60 @@ body {
       }
     }
   }
+
+   //TABLET
+   @media (min-width: 768px) and (max-width: 991px) {
+    .bg-color {
+      height: 200px;
+      .container {
+        .container-progress {
+          width: 500px;
+        }
+        .contenedor-progress-detalle{
+          width: 666px;
+          p{
+            font-size: 15px;
+          }
+      
+        }
+      }
+    }
+   }
+
+   //MOBILE
+    @media (min-width: 575px) and (max-width: 768px) {
+      .bg-color {
+        height: 200px;
+        .container {
+          .container-progress {
+            width: 450px;
+          }
+          .contenedor-progress-detalle{
+            width: 566px;
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 100px) and (max-width: 575px) {
+      .bg-color {
+        height: 200px;
+        .container {
+          .container-progress {
+            width: 265px;
+          }
+          .contenedor-progress-detalle{
+            width: 300px;
+           text-align: center;
+            p{
+              font-size: 11px;
+              width: 81px;
+            }
+          }
+        }
+      }
+    }
 }

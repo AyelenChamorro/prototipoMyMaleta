@@ -64,7 +64,7 @@ export const Registrarse = () => {
         nombre: formData.nombre,
         apellido: formData.apellido,
       }); // registro de usuario
-      console.log(res);
+     
       setApiResponse(res.data);
     } catch (error) {
       console.error(error);
@@ -76,14 +76,14 @@ export const Registrarse = () => {
     }
   };
 
-  console.log(formData, error, apiResponse);
+
   return (
     <div className="bg-form-registrase">
       <div className="text-center registro-usuario">
         <h3 className="pt-4">Registro de usuario</h3>
       </div>
       <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formGroupEmail">
+        <Form.Group className="mb-3" controlId="formGroupEmailRegistro">
           <Form.Label>Email address</Form.Label>
           <Form.Control
           className="input-email"
@@ -95,7 +95,7 @@ export const Registrarse = () => {
           />
           <div>{error.email && <p>{error.email}</p>}</div>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formGroupPassword">
+        <Form.Group className="mb-3" controlId="formGroupPasswordRegistro">
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"

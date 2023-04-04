@@ -1,22 +1,105 @@
 body {
   .header {
+    margin: 0;
+    width: 100%;
     font-family: Dancing Script;
     color: white;
     background-color: #00565f;
     height: 100px;
-   a{
-    text-decoration: none;
-   }
+    a {
+      text-decoration: none;
+    }
     .mi-maleta-home {
       text-decoration: none;
       color: white;
-  
     }
     .boton-light {
       width: 200px;
       height: 40px;
       margin-right: 20px;
       margin-top: 40px;
+    }
+  }
+  //TABLET
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header {
+      h4 {
+        font-size: 18px;
+      }
+      .boton-light {
+        width: 150px;
+        height: 40px;
+        margin-right: 20px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  //MOBILE
+  @media (min-width: 575px) and (max-width: 768px) {
+    .header {
+      height: 68px;
+      .logo-img-mi-maleta {
+        width: 50px;
+        height: 59px;
+        img {
+          width: 50;
+          height: 59;
+        }
+        h4 {
+          margin-top: 33px !important;
+          font-size: 14px !important;
+          margin-left: 5px !important;
+        }
+      }
+      .comprar {
+       font-size: 13px;
+      }
+      .viajar {
+        font-size: 13px;
+      }
+      h4 {
+        margin-top: 29px !important;
+        font-size: 15px !important;
+      }
+
+      .boton-light {
+        font-size: 10px;
+        width: 130px;
+        height: 30px;
+        margin-top: 28px;
+      }
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 575px)    {
+    .header {
+      height: 68px;
+      .logo-img-mi-maleta {
+        width: 50px;
+        height: 59px;
+        img {
+          width: 50;
+          height: 59;
+        }
+        h4 {
+          margin-top: 33px !important;
+          font-size: 14px !important;
+          margin-left: 5px !important;
+        }
+      }
+      .comprar {
+        display: none;
+      }
+      .viajar {
+        display: none;
+      }
+      .boton-light {
+        font-size: 10px;
+        width: 130px;
+        height: 30px;
+        margin-top: 28px;
+      }
     }
   }
 }

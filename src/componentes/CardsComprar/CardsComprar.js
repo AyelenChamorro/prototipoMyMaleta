@@ -60,7 +60,7 @@ export const CardsComprar = () => {
     <div className="body-cards-compra d-flex justify-content-evenly ">
       {itemComprar.map((item, key) => {
         return (
-          <div className="container-card-compra mt-5" key={key}>
+          <div className="container-card-compra mt-5 mx-3" key={key}>
             <div className="bg-imagen d-flex justify-content-center align-items-center">
               <Link to={`/HacerPedido/${item.codigo}`}>
                 <div className="container-imagen ">

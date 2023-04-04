@@ -5,7 +5,7 @@ function useHacerPedido() {
   const [circles, setCircles] = useState([1, 2, 3]);
 
   const handleNextClick = () => {
-    console.log('next')
+  
     setCurrentActive((prevActive) => {
       const nextActive = prevActive + 1;
       return nextActive > circles.length ? circles.length : nextActive;
@@ -13,7 +13,7 @@ function useHacerPedido() {
   };
 
   const handlePrevClick = () => {
-    console.log('prev')
+    
     setCurrentActive((prevActive) => {
       const nextActive = prevActive - 1;
       return nextActive < 1 ? 1 : nextActive;

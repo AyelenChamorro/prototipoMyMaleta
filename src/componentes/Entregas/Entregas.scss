@@ -1,11 +1,30 @@
-body{
-    .entregas{
-        font-family: Courgette;
-        color: white;
-        background-color: #398269;
+body {
+  .entregas {
+   padding-top: 20px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-bottom: 40px;
+    width: 100%;
+    font-family: Courgette;
+    color: white;
+    background-color: #398269;
+    p {
+      font-family: Courier Prime;
+      margin: 0;
+    }
+  }
+  //TABLET
+  @media (max-width: 768px) {
+    .entregas {
+     border-bottom: 1px solid white;
+     border-top: 1px solid white;
+     padding-top: 20px;
+        h3{
+            font-size: 18px;
+        }
         p{
-            font-family: Courier Prime; 
-            margin: 0;
+            font-size: 13px;
         }
     }
+  }
 }

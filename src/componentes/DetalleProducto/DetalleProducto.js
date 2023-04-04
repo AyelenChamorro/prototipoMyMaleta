@@ -25,7 +25,7 @@ export const DetalleProducto = ({
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  console.log(currentActive);
+ 
   const renderState = () => {
     switch (currentActive) {
       case 1:
@@ -240,7 +240,8 @@ export const DetalleProducto = ({
   return (
     <div className="bg-detalle">
       {renderState()}
-      <div className="d-flex  mt-4">
+      {currentActive < 3 && (
+        <div className="d-flex  mt-4">
         <CustomButton
           id="prev"
           disabled={currentActive === 1}
@@ -251,6 +252,8 @@ export const DetalleProducto = ({
           Siguiente
         </CustomButton>
       </div>
+      )}
+      
       <div className="d-flex  mt-5">
         <CustomButton
           type="volver"

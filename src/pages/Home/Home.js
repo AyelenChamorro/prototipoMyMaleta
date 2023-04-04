@@ -7,6 +7,7 @@ import { ComoFuncionaMiMaleta } from "../../componentes/ComoFuncionaMiMaleta/Com
 import { CrearPedido } from "../../componentes/CrearPedido/CrearPedido";
 import {Footer} from "../../componentes/Footer/Footer";
 
+
 export const Home = () => {
   return (
     <div>

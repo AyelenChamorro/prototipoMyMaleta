@@ -7,6 +7,18 @@ body{
         border: 2px solid white;
         font-family: Courgette;
         color: white;
+
+        //TABLET
+        @media (max-width: 768px) {
+            width: 200px;
+            height: 40px;
+        }
+         
+        //MOBILE
+        @media (max-width: 576px) {
+            width: 150px;
+            height: 40px;
+        }
         }
         &.buscar{
             background-color: #98ff96;
@@ -15,6 +27,12 @@ body{
             color: black;
             border-radius: 10px;
             border: 2px solid black;
+
+            //TABLET
+            @media (max-width: 768px) {
+                width: 100px;
+                height: 40px;
+            }
             
         }
         &.siguiente{
@@ -22,11 +40,33 @@ body{
             width: 400px;
             height: 40px;
             color: black;
+             //TABLET
+        @media (max-width: 768px) {
+            width: 300px;
+            height: 40px;
+        }
+         
+        //MOBILE
+        @media (max-width: 576px) {
+            width: 200px;
+            height: 40px;
+        }
         }
         &.volver{
             background-color: #FA9C86;
             width: 200px;
             height: 30px;
+             //TABLET
+        @media (max-width: 768px) {
+            width: 100px;
+            height: 30px;
+        }
+         
+        //MOBILE
+        @media (max-width: 576px) {
+            width: 100px;
+            height: 30px;
+        }
         }
     }
    

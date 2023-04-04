@@ -1,18 +1,39 @@
-body{
-    .body-cards-compra{
-        flex-wrap: wrap;
-        background-color: #398269;
-        .container-card-compra{
-       
-            width: 360px;
-            .bg-imagen{
-                background-color: #c4c4c4;
-                height: 270px;
-            }
-        }
-        .bg-white{
-            height: 200px;
-        }
+body {
+  .body-cards-compra {
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    background-color: #398269;
+    .container-card-compra {
+      width: 360px;
+      .bg-imagen {
+        background-color: #c4c4c4;
+        height: 270px;
+      }
     }
-   
+    .bg-white {
+      height: 250px;
+    }
+  }
+
+  //TABLET
+
+  @media  (min-width: 768px) and (max-width: 991px) {
+    .body-cards-compra {
+      .container-card-compra {
+       
+        .bg-imagen {
+          height: 237px;
+        }
+        .bg-white {
+          height: 181px;
+          h5 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }

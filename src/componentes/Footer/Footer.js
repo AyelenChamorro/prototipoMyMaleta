@@ -9,7 +9,7 @@ export const Footer = () => {
 
   return (
     <div className="row bg-footer">
-      <div className="col">
+      <div className="col-lg-4 col-xl-4 col-md-4 col-sm-4">
         <Link to={"/"}>
           <div className="d-flex logo-mi-maleta">
             <img src={logo} alt="logo" />
@@ -17,12 +17,12 @@ export const Footer = () => {
           </div>
         </Link>
       </div>
-      <div className="footer-items col">
+      <div className="footer-items col-lg-4 col-xl-4 col-md-4 col-sm-4">
         <h2>Sobre nosotros</h2>
         <h2>Como funciona miMaleta</h2>
         <h2>Confianza y seguridad</h2>
       </div>
-      <div className="col">
+      <div className="col-lg-4 col-xl-4 col-md-4 col-sm-4">
         <DropdownButton
           onSelect={(eventKey) => setSelectedOption(eventKey)}
           title={selectedOption}

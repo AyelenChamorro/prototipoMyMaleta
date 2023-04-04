@@ -26,5 +26,57 @@ body {
     color: white;
     padding-left: 20px;
   }
+
+  //TABLET
+  @media (min-width: 768px) and (max-width: 991px) {
+    .bg-comprar-productos {
+      height: 200px;
+      .ingresa-codigo {
+       h3{
+        font-size: 20px;
+       }
+        
+      }
+      .input-codigos {
+        width: 600px;
+        height: 30px;
+        margin-top: 20px;
+      }
+      
+    }
+  }
+
+  //MOBILE
+  @media (min-width: 575px) and (max-width: 768px) {
+    .bg-comprar-productos {
+      height: 200px;
+      .ingresa-codigo {
+        h3{
+          font-size: 20px;
+        }
+      }
+      .input-codigos {
+        width: 400px;
+        height: 30px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 575px) {
+    .bg-comprar-productos {
+      height: 200px;
+      .ingresa-codigo {
+        h3{
+          font-size: 20px;
+        }
+      }
+      .input-codigos {
+        width: 300px;
+        height: 30px;
+        margin-top: 20px;
+      }
+    }
+  }
 }
 

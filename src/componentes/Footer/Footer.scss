@@ -3,9 +3,10 @@ body {
     background-color: #00565f;
     height: 350px;
     color: white;
+    margin: 0;
     .logo-mi-maleta {
-        margin-left: 88px;
-        margin-top: 30px;
+      margin-left: 88px;
+      margin-top: 30px;
     }
     a {
       text-decoration: none;
@@ -46,6 +47,112 @@ body {
 
         --bs-dropdown-link-active-bg: #398269;
         --bs-dropdown-link-hover-bg: #398269;
+      }
+    }
+  }
+
+  //TABLET
+  @media (min-width: 768px) and (max-width: 991px) {
+    .bg-footer {
+      height: 300px;
+      .logo-mi-maleta {
+        margin-left: 15px;
+      }
+      .footer-items {
+        font-family: Courgette;
+        margin-top: 35px;
+        h2 {
+          margin-top: 47px;
+          font-size: 18px;
+        }
+      }
+      .boton-idioma {
+        .btn-primary {
+          width: 200px;
+          height: 40px;
+        }
+        .dropdown-item {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  //MOBILE
+  @media (min-width: 575px) and (max-width: 768px) {
+    .bg-footer {
+      height: 300px;
+      .logo-mi-maleta {
+        margin-left: 10px;
+        h4 {
+          font-size: 15px;
+          margin-top: 41px !important;
+        }
+        img {
+          width: 50px;
+          height: 68px;
+        }
+      }
+      .footer-items {
+        width: 200px;
+        font-family: Courgette;
+        margin-top: 30px;
+        h2 {
+          font-size: 15px;
+          margin-top: 44px;
+        }
+      }
+      .boton-idioma {
+        .btn-primary {
+          width: 150px;
+          height: 40px;
+          margin-top: 60px;
+        }
+        .dropdown-item {
+          width: 150px;
+        }
+      }
+    }
+  }
+  @media (min-width: 100px) and (max-width: 575px)    {
+    .bg-footer {
+      height: 500px;
+      .logo-mi-maleta {
+     margin-left: 10px;
+        h4 {
+          font-size: 13px;
+          margin-top: 36px !important;
+          margin-left: 10px !important;
+        }
+        img {
+          width: 40px;
+          height: 58px;
+        }
+      }
+      .footer-items {
+        width: 200px;
+        font-family: Courgette;
+      margin-top: -65px;
+       margin-left: 15px;
+      
+        h2 {
+          
+          font-size: 13px;
+        
+        }
+      }
+      .boton-idioma {
+      
+        .btn-primary {
+          width: 100px;
+          height: 40px;
+          margin-top: -65px;
+          margin-left: 15px;
+        }
+        .dropdown-item {
+          width: 100px;
+       
+        }
       }
     }
   }

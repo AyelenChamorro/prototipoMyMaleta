@@ -18,4 +18,64 @@ body {
         margin-top: 86px;
     }
   }
+
+  //TABLET
+  @media (min-width: 768px) and (max-width: 991px) {
+    .bg-pagos-entrega {
+      height: 200px;
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .candado-pagos{
+        margin-top: 50px;
+      }
+      .entrega-garantizada{
+        margin-top: 50px;
+      }
+    }
+  }
+
+  //MOBILE
+  @media (min-width: 575px) and (max-width: 768px) {
+    .bg-pagos-entrega {
+      height: 200px;
+      h3 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 13px;
+      }
+      .candado-pagos{
+        margin-top: 40px;
+      }
+      .entrega-garantizada{
+        margin-top: 50px;
+      }
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 575px) {
+    .bg-pagos-entrega {
+      flex-direction: column;
+      height: 400px;
+      align-items: center;
+      h3 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 13px;
+      }
+      .candado-pagos{
+        margin-top: 40px;
+      
+      }
+      .entrega-garantizada{
+       
+        margin-top: 50px;
+      }
+    }
+  }
 }

@@ -1,5 +1,6 @@
 body {
     .funcion-mi-maleta{
+       padding-top: 38px;
         font-family: Courgette;
         background-color: #398269;
         text-align: center;
@@ -13,4 +14,58 @@ body {
         }
       
     }
+    //TABLET
+    @media (min-width: 768px) and (max-width: 991px) {
+        .funcion-mi-maleta{
+            padding-top: 0;
+            height: 200px;
+            h3{
+                font-size:18px ;
+            }
+            p{
+                font-size: 13px;
+            }
+            .border-white{
+                border-bottom: 2px solid white;
+                width: 500px;
+                text-align: center;
+            }
+        }
+    }
+//MOBILE
+    @media (min-width: 575px) and (max-width: 768px) {
+        .funcion-mi-maleta{
+          
+            height: 300px;
+            h3{
+                font-size:18px ;
+            }
+            p{
+                font-size: 13px;
+            }
+            .border-white{
+            
+                border-bottom: 2px solid white;
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+    @media (min-width: 100px) and (max-width: 575px)    {
+        .funcion-mi-maleta{
+            h3{
+                font-size:13px ;
+            }
+            p{
+                font-size: 11px;
+            }
+            .border-white{
+                
+                border-bottom: 2px solid white;
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+
 }

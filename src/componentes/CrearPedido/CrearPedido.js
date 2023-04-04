@@ -34,10 +34,13 @@ export const CrearPedido = () => {
     <div className="bg-cards-pedido">
       {itemsPedido.map((item) => (
         <div className="d-flex  card-pedido mt-5" key={item.numero}>
-          <div className="">
+          <div className="container">
             <div className="d-flex numero-titulo ">
               <h3 className="mx-5 ">{item.numero}</h3>
+              <div className="titulo-card-pedido">
               <h4 className="text-center">{item.titulo}</h4>
+              </div>
+              
             </div>
             <div className="text-descripcion  ">
               <p className="">{item.descripcion}</p>
@@ -53,7 +56,7 @@ export const CrearPedido = () => {
         <Link to={"/Login"}>
         <CustomButton
           type="success"
-          onSuccessClick={() => console.log("Success button clicked!")}
+        
          
         >
           Crear Mi Pedido
